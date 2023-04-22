@@ -178,6 +178,10 @@ body {
     color: #000000;
 }
 
+.footer a {
+    color: #000000;
+}
+
 .link {
     display: inline-block;
   margin-right: 20px;
@@ -192,13 +196,3 @@ body {
   text-align: left;
 }
 
-.link h3 {
-    margin-bottom: 2rem;
-}
-
-.footer .footer-content .link .info ul li{
-    font-size: 700;
-    color: var(--negro);
-    text-decoration: none;
-
-}
