@@ -5,26 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pb Imprenta</title>
-    <link rel="stylesheet" href="css/normalice.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-
-        <div class="redes">
+        <div class="logo">
             <a class="fb" target="_blank"href="https://web.facebook.com/pbimprenta/?locale=es_LA&_rdc=1&_rdr">
                 <img src="Img/facebook.png" >
-              </a>
-              <a class="it" target="_blank"href="https://www.instagram.com/pbimprenta/">
+            </a>
+            <a class="it" target="_blank"href="https://www.instagram.com/pbimprenta/">
                 <img src="Img/instagram.png" >
-              </a>
-        </div>
-        
-        <div class="logo">
-            <img src="Img/shopping-cart.png" >
+            </a>
         </div>
         <nav>
            <ul class="nav-links">
@@ -33,10 +28,7 @@
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
            </ul>            
-        </nav>
-
-        
-         <!-- <a class="btn" href="#"><button>Contact</button></a> Para formulario de contacto-->
+        </nav>          
     </header>
 
     <div class="logoprincipal">
@@ -44,7 +36,7 @@
     </div>
 
     <div class="princimg">
-        <img src="Img/header.jpg" alt="">
+        <img class="imaw" src="Img/header.jpg" alt="">
     </div>
 
     <main class="product">
@@ -117,59 +109,57 @@
                 <img src="Img/invitaciones.jpg" class="imganes">
             </div>
 
-        </div>    
-
-
-        
-
-    </main>
-
-
-
+            <button id="chatbot-trigger">Chat</button>
+            <div class="chatbot hidden">
+            <div class="chatbot__header">
+                <h2>Asistente Virtual</h2>
+                <div class="chatbot__controls">
+                <button id="chatbot-minimize">-</button>
+                <button id="chatbot-close">x</button>
+                <link rel="stylesheet" href="skyle.css">
+                </div>
+            </div>
+            <div class="chatbot__body">
+                <div class="chatbot__messages" id="chat-messages">
+                <div class="chatbot__message chatbot__message--bot">
+                    <p>Hola, ¿en qué puedo ayudarte?</p>
+                </div>
+                </div>
+                <div class="chatbot__input-container">
+                <input type="text" id="input-box" placeholder="Escribe aquí tu pregunta">
+                <button id="send-button">Enviar</button>
+                </div>
+            </div>
+            </div>
+        </main>
 
     <footer class="footer">
-
-        <div class="footer-content">
-
-            <div class="link">
-                <h3>Productos</h3>
-                <li><a href="#">Impresion digital</a></li>
-                <li><a href="#">Impresion plotter</a></li>
-                <li><a href="#">Graficas publicitarias</a></li>
-                <li><a href="#">Regalos corporativos</a></li>
-                <li><a href="#">Textil</a></li>
-            </div>
-            <div class="link">
-                <h3 class="info">Informacion</h3>
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Como comprar</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            
-
-            <div class="news-content">
-
-                <div class="news-1">
-                    <h3> Suscribete a las noticias</h3>
-                    <p>
-                        Temporibus, velit! Enim velit perferendis illo nostrum!
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Pyme</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
                 </div>
-    
-                <div class="news-2">
-                    <input type="email" placeholder="Email">
-                    <input type="submit" class="btn-2" value="Enviar">
+                <div class="footer-col">
+                    <h4>Obtener ayuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Seguimiento</a></li>
+                        <li><a href="#">Estado de pedido</a></li>
+                        <li><a href="#">Forma de pago</a></li>
+                    </ul>
                 </div>
+                <form action="#" method="post" class="form-suscripcion">
+                    <label for="email" class="label-suscripcion">Suscríbete para recibir nuestras novedades:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" class="input-suscripcion">
+                    <button type="submit" class="btn-suscripcion">Suscribirse</button>
+                  </form>
             </div>
-            
-            
         </div>
-
-    </footer>
-    
+   </footer>
 </body>
 </html>
